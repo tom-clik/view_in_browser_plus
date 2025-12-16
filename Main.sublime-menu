@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tools",
+    "children": [
+      { "caption": "ViewInBrowserPlus: Preview", "command": "view_in_browser_plus" }
+    ]
+  },
+  {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "View in Browser Plus",
+                        "children":
+                        [
+                             {
+                              "caption": "Edit Settings",
+                              "command": "edit_settings",
+                              "args": {
+                                "base_file": "${packages}/User/ViewInBrowserPlus.sublime-settings",
+                                "user_file": "${packages}/User/ViewInBrowserPlus.sublime-settings"
+                              }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

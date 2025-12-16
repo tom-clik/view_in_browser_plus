@@ -1,0 +1,29 @@
+{
+  // If true, pick the *longest* matching base_path (best match).
+  "prefer_longest_match": true,
+
+  // If true, URL-encode the resulting path (recommended).
+  "url_encode_path": true,
+
+  // Optional: open in a specific browser app.
+  // Windows example: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+  // macOS example: "/Applications/Google Chrome.app"
+  // Linux example: "/usr/bin/google-chrome"
+  "browser": "",
+
+  // The important part: multiple basePath/baseURL pairs.
+  "mappings": [
+    {
+      "base_path": "/Users/me/projects/site-a/public",
+      "base_url": "http://localhost:3000"
+    },
+    {
+      "base_path": "/Users/me/projects/site-b/dist",
+      "base_url": "http://localhost:5173"
+    },
+    {
+      "base_path": "C:\\work\\legacy\\wwwroot",
+      "base_url": "http://legacy.local"
+    }
+  ]
+}
